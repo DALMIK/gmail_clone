@@ -50,7 +50,7 @@ const Header = ({toggleDrawer}) => {
             <MenuIcon style={{color: 'black', cursor:"pointer"}} onClick={toggleDrawer} />
             <img src={GmailLogo} alt="logo" style={{width:"8%" , marginLeft:"15px"}} />
             <SearchBar>
-                <Search color='action' style={{background:"red"}} />
+                <Search color='action' />
                 <InputBase placeholder='Search mail' />
                 <Tune color='action'/>
             </SearchBar>
