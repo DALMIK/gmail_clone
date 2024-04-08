@@ -102,7 +102,7 @@ const ComposeMail = ({openDialog, setOpendiallog}) => {
         Port : 2525,
         To : 'dalmik081219998@gmail.com',
         From : "dalmik081219998@gmail.com",
-        Subject : "This is the subject hiiiiiiii done",
+        Subject : "This is the subject hiiiiiiii done nicely done",
         Body : "And this is the body"
         }).then(
           message => alert(message,"manish")
