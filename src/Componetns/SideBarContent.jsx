@@ -49,6 +49,7 @@ const SideBarContent = () => {
 
 
 
+
   return (
     <>
       <Container>
@@ -62,7 +63,7 @@ const SideBarContent = () => {
             return <ListItem><data.icon fontSize="small" />{data.title}</ListItem>;
           })}
         </List>
-        <ComposeMail openDialog={openDialog} />
+        <ComposeMail openDialog={openDialog} setOpendiallog={setOpendiallog} />
       </Container>
     </>
   );

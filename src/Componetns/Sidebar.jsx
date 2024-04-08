@@ -1,6 +1,6 @@
 import React from 'react';
 import SideBarContent from './SideBarContent';
-import { Drawer, styled} from '@mui/material';
+import { Drawer} from '@mui/material';
 
 const Sidebar = ({openDrawer}) => {
   return (
