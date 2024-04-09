@@ -7,7 +7,8 @@ import { GmailLogo } from '../Constants/Constants';
 const StyledAppBar = styled(AppBar)({
     backgroundColor: "#F5F5F5",
     boxShadow: 'none',
-    minHeight : 75
+    minHeight : 75,
+    position :'sticky'
 })
 const SearchBar = styled(Box)({
     display: 'flex',
@@ -34,6 +35,9 @@ const OptioonsWrapper = styled(Box)({
     '& > svg' : {
         marginRight: '17px',
         fontSize : '27px'
+    },
+    '& > svg : hover' : {
+        cursor : 'pointer'
     }
 })
 
@@ -45,7 +49,7 @@ const OptioonsWrapper = styled(Box)({
 
 const Header = ({toggleDrawer}) => {
   return (
-    <StyledAppBar position='static'>
+    <StyledAppBar>
         <Toolbar>
             <MenuIcon style={{color: 'black', cursor:"pointer"}} onClick={toggleDrawer} />
             <img src={GmailLogo} alt="logo" style={{width:"8%" , marginLeft:"15px"}} />
@@ -54,7 +58,7 @@ const Header = ({toggleDrawer}) => {
                 <InputBase placeholder='Search mail' />
                 <Tune color='action'/>
             </SearchBar>
-                <OptioonsWrapper>
+            <OptioonsWrapper>
                 <HelpOutlineOutlined color='action'/>
                 <SettingsOutlined color='action'/>
                 <AppsOutlined color='action'/>

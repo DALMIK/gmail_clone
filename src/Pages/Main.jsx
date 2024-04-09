@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../Componetns/Header";
 import Sidebar from "../Componetns/Sidebar";
+import Content from "../Componetns/Content";
 
 const Main = () => {
 
@@ -18,6 +19,7 @@ const Main = () => {
     <>
       <Header toggleDrawer={toggleDrawer} />
       <Sidebar openDrawer={openDrawer} />
+      <Content setMarginLeft={openDrawer ? "276px" : "10px"}/> 
     </>
   );
 };
