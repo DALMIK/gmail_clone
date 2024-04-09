@@ -7,7 +7,7 @@ import { API_URLS } from '../services/apiUrls'
 
 
 const dialogStyle = {
-  height : "90%",
+  height : "80%",
   width : "80%",
   maxWidth : "100%",
   maxWidth : "100%",
