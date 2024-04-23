@@ -12,7 +12,7 @@ const dialogStyle = {
   maxWidth : "100%",
   maxWidth : "100%",
   boxShadow : "none",
-  borderRadius : "10px 10px 0 0"
+  borderRadius : "10px"
 }
 
 const Header = styled(Box)({
@@ -151,7 +151,7 @@ const ComposeMail = ({openDialog, setOpendiallog}) => {
       </RecipientWrapper>
       <TextField 
         multiline
-        rows={14}
+        rows={16}
         sx={{'& .MuiOutlinedInput-notchedOutline' : { border: "none" }}}
         name='body'
         onChange={(e) => onValueChange(e)}  
