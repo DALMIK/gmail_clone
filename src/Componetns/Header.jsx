@@ -35,11 +35,15 @@ const OptioonsWrapper = styled(Box)({
     '& > svg' : {
         marginRight: '17px',
         fontSize : '27px'
-    },
-    '& > svg : hover' : {
-        cursor : 'pointer'
     }
 })
+
+const StyledIcons = styled(Box)`
+    margin-right: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+`
 
 
 
@@ -59,10 +63,18 @@ const Header = ({toggleDrawer}) => {
                 <Tune color='action'/>
             </SearchBar>
             <OptioonsWrapper>
-                <HelpOutlineOutlined color='action'/>
-                <SettingsOutlined color='action'/>
-                <AppsOutlined color='action'/>
-                <AccountCircleOutlined color='action'/>
+                <StyledIcons>
+                    <HelpOutlineOutlined color='action'/>
+                </StyledIcons>
+                <StyledIcons>
+                    <SettingsOutlined color='action' />
+                </StyledIcons>
+                <StyledIcons>
+                    <AppsOutlined color='action' />
+                </StyledIcons>
+                <StyledIcons>
+                    <AccountCircleOutlined color='action' />
+                </StyledIcons>
             </OptioonsWrapper>
         </Toolbar>
     </StyledAppBar>
