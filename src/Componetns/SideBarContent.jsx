@@ -55,7 +55,7 @@ const SideBarContent = () => {
       <Container>
         <Box  onClick={toggledialog}>
           <ComposeButton>
-            <CreateOutlined style={{ marginRight: "10px" }} /> Compose
+            <CreateOutlined style={{ marginRight: "10px" }} /> Composes
           </ComposeButton>
         </Box>
         <List>
